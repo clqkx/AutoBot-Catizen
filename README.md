@@ -45,9 +45,9 @@ Follow the steps below to launch script:
 
 2. Go to the **"Sources"** tab in the web inspector.
 
-3. Find the file **"bundle-5d469c4970.js"**. It is located in the **"tgCat/game/cat/js"** folder.
+3. Find the file **"bundle-*.js"**. It is located in the **"tgCat/game/cat/js"** folder.
 
-4. Open the file **"bundle-5d469c4970.js"** and locate the line with the condition **"L([D("leaguechange")], E.prototype, "updateBg", null),"**.
+4. Open the file **"bundle-*.js"** and locate the line with the condition **D([L("leaguechange")], M.prototype, "updateBg", null),**.
 
 5. Set a Brake Point at this line. You can do this by clicking on the line number to the left of the code or by pressing the **F9** key on your keyboard.
 
@@ -65,18 +65,17 @@ console.log(`${consolePrefix}Injecting...`, consoleGreen);
 
 try {
     function onClickAuto() {
-        console.log('injected'),
-        u(`AutoBot ${N.cat.isAuto ? 'deactivated' : 'activated'}!\n\nCracked by @clqkx`)
-        N.cat.isAuto = !N.cat.isAuto,
-        N.cat.isAuto ? (this.ani8.play(0, !0),
+        u(`AutoBot ${P.cat.isAuto ? 'deactivated' : 'activated'}!\n\nCracked by @clqkx`)
+        P.cat.isAuto = !P.cat.isAuto,
+        P.cat.isAuto ? (this.ani8.play(0, !0),
         Laya.timer.loop(500, this, this.checkAuto),
         this.checkFreeCat()) : (Laya.timer.clearAll(this.checkAuto),
         this.ani8.stop(),
         Laya.timer.loop(5e3, this, this.checkSum)),
-        this.m_img_StopAuto.visible = !N.cat.isAuto
+        this.m_img_StopAuto.visible = !P.cat.isAuto
     }
     
-    E.prototype.onClickAuto = onClickAuto
+    M.prototype.onClickAuto = onClickAuto
     console.log(`${consolePrefix}Script loaded`, consoleGreen);
     console.log(`${consolePrefix}Crack by @clqkx`, consoleGreen);
 
