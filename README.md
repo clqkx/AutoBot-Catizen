@@ -77,7 +77,7 @@ try {
         u(`AutoBot ${P.cat.isAuto ? 'deactivated' : 'activated'}!\n\nCracked by @clqkx`)
     }
     
-    M.prototype.onClickAuto = onClickAuto
+    N.prototype.onClickAuto = onClickAuto
     console.log(`${consolePrefix}Script loaded`, consoleGreen);
     console.log(`${consolePrefix}Crack by @clqkx`, consoleGreen);
 
