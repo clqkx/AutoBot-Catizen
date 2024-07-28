@@ -47,7 +47,7 @@ Follow the steps below to launch script:
 
 3. Find the file **"bundle-*.js"**. It is located in the **"tgCat/game/cat/js"** folder.
 
-4. Open the file **"bundle-*.js"** and locate the line with the condition **L([A("leaguechange")], M.prototype, "updateBg", null),**.
+4. Open the file **"bundle-*.js"** and locate the line with the condition **A([R("leaguechange")], N.prototype, "updateBg", null),**.
 
 5. Set a Brake Point at this line. You can do this by clicking on the line number to the left of the code or by pressing the **F9** key on your keyboard.
 
@@ -77,7 +77,7 @@ try {
         u(`AutoBot ${P.cat.isAuto ? 'deactivated' : 'activated'}!\n\nCracked by @clqkx`)
     }
     
-    M.prototype.onClickAuto = onClickAuto
+    N.prototype.onClickAuto = onClickAuto
     console.log(`${consolePrefix}Script loaded`, consoleGreen);
     console.log(`${consolePrefix}Crack by @clqkx`, consoleGreen);
 
